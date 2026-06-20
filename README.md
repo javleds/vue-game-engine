@@ -15,7 +15,7 @@ Official repositories:
 
 ## Package Pair
 
-This package is the frontend half of the engine. It is designed to work with the Laravel backend package, `javleds/turn-engine-laravel`, through HTTP endpoints and realtime room events.
+This package is the frontend half of the engine. It is designed to work with the Laravel backend package, `javleds/laravel-game-engine`, through HTTP endpoints and realtime room events.
 
 ```plantuml
 @startuml
@@ -28,14 +28,14 @@ package "Host Vue app" {
   [Echo Setup]
 }
 
-package "@javleds/vue-turn-engine" {
+package "@javleds/vue-game-engine" {
   [Room Repository]
   [Chat Repository]
   [Session Store]
   [Realtime Composables]
 }
 
-package "javleds/turn-engine-laravel" {
+package "javleds/laravel-game-engine" {
   [Room Services]
   [Chat Services]
   [Command Runner]
@@ -80,7 +80,7 @@ For local development with a sibling checkout:
 ```json
 {
   "dependencies": {
-    "@javleds/vue-turn-engine": "file:../vue-game-engine"
+    "@javleds/vue-game-engine": "file:../vue-game-engine"
   }
 }
 ```
@@ -100,7 +100,7 @@ Configure the realtime client during app boot. Laravel Echo is the expected defa
 ```ts
 import Echo from 'laravel-echo'
 import Pusher from 'pusher-js'
-import { configureTurnEngineRealtime } from '@javleds/vue-turn-engine'
+import { configureTurnEngineRealtime } from '@javleds/vue-game-engine'
 
 window.Pusher = Pusher
 

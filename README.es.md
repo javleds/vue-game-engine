@@ -15,7 +15,7 @@ Repositorios oficiales:
 
 ## Relacion Backend / Frontend
 
-`@javleds/vue-turn-engine` es la mitad frontend del motor. `javleds/turn-engine-laravel` es la mitad backend. El frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha eventos realtime por sala. El backend mantiene el estado autoritativo.
+`@javleds/vue-game-engine` es la mitad frontend del motor. `javleds/laravel-game-engine` es la mitad backend. El frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha eventos realtime por sala. El backend mantiene el estado autoritativo.
 
 ```plantuml
 @startuml
@@ -28,14 +28,14 @@ package "Aplicacion Vue host" {
   [Setup de Echo]
 }
 
-package "@javleds/vue-turn-engine" {
+package "@javleds/vue-game-engine" {
   [Repositorio de sala]
   [Repositorio de chat]
   [Store de sesion]
   [Composables realtime]
 }
 
-package "javleds/turn-engine-laravel" {
+package "javleds/laravel-game-engine" {
   [Servicios de sala]
   [Servicios de chat]
   [Command Runner]
@@ -78,7 +78,7 @@ Para desarrollo con repos hermanos:
 ```json
 {
   "dependencies": {
-    "@javleds/vue-turn-engine": "file:../vue-game-engine"
+    "@javleds/vue-game-engine": "file:../vue-game-engine"
   }
 }
 ```
@@ -98,7 +98,7 @@ Configura el cliente realtime durante el arranque de la app. Laravel Echo es el 
 ```ts
 import Echo from 'laravel-echo'
 import Pusher from 'pusher-js'
-import { configureTurnEngineRealtime } from '@javleds/vue-turn-engine'
+import { configureTurnEngineRealtime } from '@javleds/vue-game-engine'
 
 window.Pusher = Pusher
 
