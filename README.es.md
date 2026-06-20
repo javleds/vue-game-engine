@@ -16,7 +16,7 @@ Estos enlaces se agregaran antes de publicar:
 
 ## Relacion Backend / Frontend
 
-`@turn-engine/vue` es la mitad frontend del motor. `javleds/turn-engine-laravel` es la mitad backend. El frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha eventos realtime por sala. El backend mantiene el estado autoritativo.
+`@javleds/vue-turn-engine` es la mitad frontend del motor. `javleds/turn-engine-laravel` es la mitad backend. El frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha eventos realtime por sala. El backend mantiene el estado autoritativo.
 
 ```plantuml
 @startuml
@@ -29,7 +29,7 @@ package "Aplicacion Vue host" {
   [Setup de Echo]
 }
 
-package "@turn-engine/vue" {
+package "@javleds/vue-turn-engine" {
   [Repositorio de sala]
   [Repositorio de chat]
   [Store de sesion]
@@ -79,7 +79,7 @@ Para desarrollo con repos hermanos:
 ```json
 {
   "dependencies": {
-    "@turn-engine/vue": "file:../vue-game-engine"
+    "@javleds/vue-turn-engine": "file:../vue-game-engine"
   }
 }
 ```
@@ -99,7 +99,7 @@ Configura el cliente realtime durante el arranque de la app. Laravel Echo es el 
 ```ts
 import Echo from 'laravel-echo'
 import Pusher from 'pusher-js'
-import { configureTurnEngineRealtime } from '@turn-engine/vue'
+import { configureTurnEngineRealtime } from '@javleds/vue-turn-engine'
 
 window.Pusher = Pusher
 
@@ -156,7 +156,7 @@ Los comandos especificos del juego quedan fuera del paquete. La app host debe cr
 ## Checklist Para Publicar
 
 - Agregar URLs oficiales en README y `package.json`.
-- Decidir si el paquete mantiene el scope `@turn-engine/vue`.
+- Confirmar la URL oficial del repositorio antes de publicar.
 -  Mantener `dist` generado por `npm run build` antes de publicar.
 - Agregar CI para typecheck, build e instalacion de prueba.
 - Crear tag semantico, por ejemplo `v0.1.0`.
