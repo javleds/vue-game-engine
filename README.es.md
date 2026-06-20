@@ -8,11 +8,10 @@ La documentacion principal en ingles esta en [README.md](README.md).
 
 ## Enlaces de Repositorio
 
-Estos enlaces se agregaran antes de publicar:
+Repositorios oficiales:
 
-- Paquete frontend Vue: TODO
-- Paquete backend Laravel: TODO
-- Juego host de ejemplo: TODO
+- Paquete frontend Vue: https://github.com/javleds/vue-game-engine
+- Paquete backend Laravel: https://github.com/javleds/laravel-game-engine
 
 ## Relacion Backend / Frontend
 
@@ -155,9 +154,7 @@ Los comandos especificos del juego quedan fuera del paquete. La app host debe cr
 
 ## Checklist Para Publicar
 
-- Agregar URLs oficiales en README y `package.json`.
-- Confirmar la URL oficial del repositorio antes de publicar.
--  Mantener `dist` generado por `npm run build` antes de publicar.
+- Mantener `dist` generado por `npm run build` antes de publicar.
 - Agregar CI para typecheck, build e instalacion de prueba.
 - Crear tag semantico, por ejemplo `v0.1.0`.
 
