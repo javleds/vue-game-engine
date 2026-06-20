@@ -12,6 +12,14 @@
     "game-engine",
     "realtime"
   ],
+  "homepage": "https://github.com/javleds/vue-game-engine#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javleds/vue-game-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javleds/vue-game-engine/issues"
+  },
   "files": [
     "dist",
     "README.md",
