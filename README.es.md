@@ -157,8 +157,16 @@ Los comandos especificos del juego quedan fuera del paquete. La app host debe cr
 
 - Agregar URLs oficiales en README y `package.json`.
 - Decidir si el paquete mantiene el scope `@turn-engine/vue`.
-- Cambiar `private` a `false` o quitarlo antes de publicar en npm.
-- Agregar build que genere JavaScript y declaraciones en `dist`.
-- Actualizar `exports`, `main`, `module` y `types` para apuntar a `dist`.
+-  Mantener `dist` generado por `npm run build` antes de publicar.
 - Agregar CI para typecheck, build e instalacion de prueba.
 - Crear tag semantico, por ejemplo `v0.1.0`.
+
+## Build
+
+Este paquete publica JavaScript compilado y declaraciones desde `dist`.
+
+```bash
+npm install
+npm run build
+npm pack --dry-run
+```
