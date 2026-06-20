@@ -1,13 +1,30 @@
 {
   "name": "@turn-engine/vue",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "Reusable Vue client utilities for online turn-based board games.",
+  "license": "UNLICENSED",
+  "keywords": [
+    "vue",
+    "board-game",
+    "turn-based",
+    "game-engine",
+    "realtime"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "README.es.md"
+  ],
   "exports": {
     ".": "./src/index.ts"
   },
   "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build:types": "tsc -p tsconfig.json"
+  },
   "peerDependencies": {
     "axios": "^1.7.9",
     "laravel-echo": "^2.0.2",
@@ -15,6 +32,10 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "typescript": "^5.7.2"
+    "axios": "^1.7.9",
+    "laravel-echo": "^2.0.2",
+    "pinia": "^2.3.0",
+    "typescript": "^5.7.2",
+    "vue": "^3.5.13"
   }
 }
