@@ -300,6 +300,57 @@ export const turnEngineComponentStyles = `
 .te-gallery-header p {
   margin: 0;
 }
+
+.te-action-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--te-modal-z-index, 60);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.te-action-dialog {
+  display: grid;
+  gap: 1rem;
+  width: min(var(--te-action-dialog-width, 26.25rem), 100%);
+}
+
+.te-action-dialog__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.te-action-dialog__header h2,
+.te-action-dialog__header p {
+  margin: 0;
+}
+
+.te-action-dialog__header div {
+  display: grid;
+  gap: 0.375rem;
+  min-width: 0;
+}
+
+.te-action-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.te-deck-card,
+.te-card-shell {
+  display: grid;
+  min-width: 0;
+}
+
+.te-card-stack {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
 `
 
 export function installTurnEngineComponentStyles(documentRef: Document = document): void {

@@ -17,6 +17,9 @@ export {
   type ChatMessageKind,
 } from './repositories/chatRepository'
 export { useSessionStore } from './stores/sessionStore'
+export { default as EngineActionDialog } from './components/EngineActionDialog.vue'
+export { default as EngineCardShell } from './components/EngineCardShell.vue'
+export { default as EngineCardStack } from './components/EngineCardStack.vue'
 export { default as EngineChatForm } from './components/EngineChatForm.vue'
 export { default as EngineChatMessages } from './components/EngineChatMessages.vue'
 export { default as EngineFloatingChat } from './components/EngineFloatingChat.vue'
@@ -25,6 +28,7 @@ export { default as EngineHelpButton } from './components/EngineHelpButton.vue'
 export { default as EngineHelpModal } from './components/EngineHelpModal.vue'
 export { default as EngineLobbyChat } from './components/EngineLobbyChat.vue'
 export { default as EngineLobbyPlayerList } from './components/EngineLobbyPlayerList.vue'
+export { default as EngineDeckCard } from './components/EngineDeckCard.vue'
 export { default as EngineRoomSummary } from './components/EngineRoomSummary.vue'
 export { default as EngineTurnOrder } from './components/EngineTurnOrder.vue'
 export {
