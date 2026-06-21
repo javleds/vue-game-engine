@@ -268,6 +268,38 @@ export const turnEngineComponentStyles = `
   min-height: 0;
   overflow-y: auto;
 }
+
+.te-gallery-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--te-modal-z-index, 60);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.te-gallery-dialog {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  width: min(var(--te-gallery-width, 32rem), 100%);
+  max-height: min(var(--te-gallery-max-height, 42rem), calc(100vh - 2rem));
+  min-height: 0;
+  overflow: hidden;
+}
+
+.te-gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.te-gallery-header h2,
+.te-gallery-header p {
+  margin: 0;
+}
 `
 
 export function installTurnEngineComponentStyles(documentRef: Document = document): void {
