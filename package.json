@@ -36,8 +36,8 @@
     }
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "vite build && vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit",
     "prepack": "npm run build",
     "prepare": "npm run build"
   },
@@ -48,10 +48,13 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.7",
     "axios": "^1.7.9",
     "laravel-echo": "^2.0.2",
     "pinia": "^2.3.0",
     "typescript": "^5.7.2",
-    "vue": "^3.5.13"
+    "vite": "^8.0.16",
+    "vue": "^3.5.13",
+    "vue-tsc": "^3.3.5"
   }
 }

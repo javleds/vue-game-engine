@@ -17,15 +17,15 @@ export {
   type ChatMessageKind,
 } from './repositories/chatRepository'
 export { useSessionStore } from './stores/sessionStore'
-export { EngineChatForm } from './components/EngineChatForm'
-export { EngineChatMessages } from './components/EngineChatMessages'
-export { EngineFloatingChat, type EngineChatTab } from './components/EngineFloatingChat'
-export { EngineHelpButton } from './components/EngineHelpButton'
-export { EngineHelpModal } from './components/EngineHelpModal'
-export { EngineLobbyChat } from './components/EngineLobbyChat'
-export { EngineLobbyPlayerList } from './components/EngineLobbyPlayerList'
-export { EngineRoomSummary } from './components/EngineRoomSummary'
-export { EngineTurnOrder, type EngineTurnPlayer } from './components/EngineTurnOrder'
+export { default as EngineChatForm } from './components/EngineChatForm.vue'
+export { default as EngineChatMessages } from './components/EngineChatMessages.vue'
+export { default as EngineFloatingChat } from './components/EngineFloatingChat.vue'
+export { default as EngineHelpButton } from './components/EngineHelpButton.vue'
+export { default as EngineHelpModal } from './components/EngineHelpModal.vue'
+export { default as EngineLobbyChat } from './components/EngineLobbyChat.vue'
+export { default as EngineLobbyPlayerList } from './components/EngineLobbyPlayerList.vue'
+export { default as EngineRoomSummary } from './components/EngineRoomSummary.vue'
+export { default as EngineTurnOrder } from './components/EngineTurnOrder.vue'
 export {
   installTurnEngineComponentStyles,
   turnEngineComponentStyles,
@@ -33,6 +33,7 @@ export {
 export { chatMessageFullTimestamp, chatMessageTime } from './utils/chatTime'
 export { privateReconnectUrl, publicInviteUrl } from './utils/roomLinks'
 export type { ChatMessageView } from './types/chat'
+export type { EngineChatTab, EngineTurnPlayer } from './types/components'
 export type {
   LobbyPlayer,
   RoomSessionResponse,
