@@ -22,7 +22,6 @@
   },
   "files": [
     "dist",
-    "docs",
     "README.md",
     "README.es.md",
     "LICENSE"
@@ -38,6 +37,7 @@
   },
   "scripts": {
     "build": "vite build && vue-tsc -p tsconfig.json --declaration --emitDeclarationOnly",
+    "docs:screenshots": "node docs/screenshots/capture.mjs",
     "typecheck": "vue-tsc -p tsconfig.json --noEmit",
     "prepack": "npm run build",
     "prepare": "npm run build"
@@ -53,6 +53,7 @@
     "axios": "^1.7.9",
     "laravel-echo": "^2.0.2",
     "pinia": "^2.3.0",
+    "playwright": "^1.61.0",
     "typescript": "^5.7.2",
     "vite": "^8.0.16",
     "vue": "^3.5.13",

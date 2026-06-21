@@ -86,25 +86,25 @@ import { installTurnEngineComponentStyles } from '@javleds/vue-game-engine'
 installTurnEngineComponentStyles()
 ```
 
-Component reference:
+Repository-only component reference. These docs and screenshots are kept in git, but they are not included in the npm package:
 
-- [Component index](docs/components/README.md)
-- [EngineActionDialog](docs/components/EngineActionDialog.md)
-- [EngineCardShell](docs/components/EngineCardShell.md)
-- [EngineCardStack](docs/components/EngineCardStack.md)
-- [EngineChatForm](docs/components/EngineChatForm.md)
-- [EngineChatMessages](docs/components/EngineChatMessages.md)
-- [EngineDeckCard](docs/components/EngineDeckCard.md)
-- [EngineFloatingChat](docs/components/EngineFloatingChat.md)
-- [EngineGalleryOverlay](docs/components/EngineGalleryOverlay.md)
-- [EngineHelpButton](docs/components/EngineHelpButton.md)
-- [EngineHelpModal](docs/components/EngineHelpModal.md)
-- [EngineLobbyChat](docs/components/EngineLobbyChat.md)
-- [EngineLobbyPlayerList](docs/components/EngineLobbyPlayerList.md)
-- [EnginePlayerStatusPanel](docs/components/EnginePlayerStatusPanel.md)
-- [EngineRoomSummary](docs/components/EngineRoomSummary.md)
-- [EngineTabs](docs/components/EngineTabs.md)
-- [EngineTurnOrder](docs/components/EngineTurnOrder.md)
+- [Component index](https://github.com/javleds/vue-game-engine/blob/main/docs/components/README.md)
+- [EngineActionDialog](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineActionDialog.md)
+- [EngineCardShell](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineCardShell.md)
+- [EngineCardStack](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineCardStack.md)
+- [EngineChatForm](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineChatForm.md)
+- [EngineChatMessages](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineChatMessages.md)
+- [EngineDeckCard](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineDeckCard.md)
+- [EngineFloatingChat](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineFloatingChat.md)
+- [EngineGalleryOverlay](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineGalleryOverlay.md)
+- [EngineHelpButton](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineHelpButton.md)
+- [EngineHelpModal](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineHelpModal.md)
+- [EngineLobbyChat](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineLobbyChat.md)
+- [EngineLobbyPlayerList](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineLobbyPlayerList.md)
+- [EnginePlayerStatusPanel](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EnginePlayerStatusPanel.md)
+- [EngineRoomSummary](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineRoomSummary.md)
+- [EngineTabs](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineTabs.md)
+- [EngineTurnOrder](https://github.com/javleds/vue-game-engine/blob/main/docs/components/EngineTurnOrder.md)
 
 ## Installation
 

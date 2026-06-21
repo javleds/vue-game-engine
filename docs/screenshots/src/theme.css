@@ -1,0 +1,291 @@
+:root {
+  color: #1e293b;
+  background: #eef2f7;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.55rem 0.75rem;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1e293b;
+  padding: 0.55rem 0.7rem;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(2, 520px);
+  gap: 32px;
+  padding: 32px;
+}
+
+.shot {
+  position: relative;
+  width: 520px;
+  min-height: 280px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef6ff 100%);
+  box-shadow: 0 18px 45px rgb(15 23 42 / 12%);
+}
+
+.shot-wide {
+  min-height: 180px;
+}
+
+.shot-narrow {
+  min-height: 150px;
+}
+
+.modal-shot,
+.gallery-shot,
+.floating-shot {
+  height: 430px;
+}
+
+.card-shot {
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+}
+
+.te-room-summary,
+.te-player-list__item,
+.te-turn-order__player,
+.te-chat-message,
+.te-lobby-chat,
+.te-chat-panel,
+.te-help-modal__dialog,
+.te-action-dialog,
+.te-gallery-dialog,
+.te-player-status-panel,
+.te-deck-card,
+.te-card-shell,
+.te-tabs__button {
+  border: 1px solid #d4deea;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 10px 25px rgb(15 23 42 / 8%);
+}
+
+.te-room-summary,
+.te-player-status-panel {
+  padding: 18px;
+}
+
+.te-room-summary__eyebrow,
+.te-player-status-panel__heading p,
+.panel-note {
+  color: #64748b;
+}
+
+.te-room-summary__title,
+.te-player-status-panel h2,
+.te-lobby-chat h2,
+.te-help-modal__header h2,
+.te-action-dialog h2,
+.te-gallery-header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.te-icon-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.te-turn-order__player--current {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.te-turn-order__player--disconnected {
+  opacity: 0.5;
+}
+
+.te-turn-order__presence {
+  background: #94a3b8;
+}
+
+.te-turn-order__presence--online {
+  background: #16a34a;
+}
+
+.te-turn-order__tag,
+.te-player-list__badge,
+.te-player-list__status,
+.te-player-status-panel strong {
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.2rem 0.45rem;
+}
+
+.te-player-list__status--offline {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.te-chat-messages {
+  max-height: 210px;
+}
+
+.te-chat-message {
+  box-shadow: none;
+}
+
+.te-chat-message__time {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+.te-lobby-chat {
+  padding: 16px;
+}
+
+.te-chat-panel {
+  position: absolute !important;
+  right: 24px;
+  bottom: 24px;
+}
+
+.te-chat-fab,
+.te-help-fab {
+  position: absolute !important;
+}
+
+.te-help-fab {
+  left: 50%;
+  bottom: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  font-size: 1.25rem;
+}
+
+.te-help-modal__backdrop,
+.te-action-dialog-backdrop,
+.te-gallery-backdrop {
+  position: absolute !important;
+  background: rgb(15 23 42 / 42%);
+}
+
+.te-help-modal__dialog,
+.te-action-dialog,
+.te-gallery-dialog {
+  padding: 18px;
+}
+
+.te-help-modal__eyebrow {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.te-help-modal__content {
+  color: #475569;
+}
+
+.te-action-dialog__cancel,
+.te-gallery-close,
+.te-help-modal__close,
+.te-chat-panel__close {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.te-card-shell {
+  padding: 0;
+}
+
+.sample-card,
+.te-deck-card {
+  display: grid;
+  align-content: space-between;
+  width: 180px;
+  height: 250px;
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #fff7ed 0%, #dbeafe 100%);
+  color: #172554;
+  font-weight: 800;
+}
+
+.sample-card span {
+  color: #475569;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.stacked {
+  height: 72px;
+  margin-top: -18px;
+}
+
+.stacked:first-child {
+  margin-top: 0;
+}
+
+.te-deck-card {
+  place-items: center;
+}
+
+.te-tabs {
+  gap: 8px;
+}
+
+.te-tabs__button {
+  color: #334155;
+  background: white;
+}
+
+.te-tabs__button--active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.te-player-status-panel__stats {
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.te-gallery-action {
+  width: 100%;
+}
+
+.gallery-card {
+  width: 210px;
+  height: 280px;
+}
