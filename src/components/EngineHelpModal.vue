@@ -4,9 +4,11 @@ import { nextTick, ref, watch } from 'vue'
 const props = withDefaults(defineProps<{
   open: boolean
   title?: string
+  eyebrow?: string
   closeLabel?: string
 }>(), {
   title: 'Ayuda',
+  eyebrow: '',
   closeLabel: 'Cerrar ayuda',
 })
 
@@ -57,7 +59,10 @@ function handleKeydown(event: KeyboardEvent): void {
       @keydown="handleKeydown"
     >
       <header class="te-help-modal__header">
-        <h2>{{ title }}</h2>
+        <div>
+          <p v-if="eyebrow" class="te-help-modal__eyebrow">{{ eyebrow }}</p>
+          <h2>{{ title }}</h2>
+        </div>
         <button type="button" class="te-help-modal__close" :aria-label="closeLabel" @click="close">
           <slot name="close">x</slot>
         </button>

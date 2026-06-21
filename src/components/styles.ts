@@ -264,6 +264,10 @@ export const turnEngineComponentStyles = `
   gap: 0.75rem;
 }
 
+.te-help-modal__eyebrow {
+  margin: 0;
+}
+
 .te-help-modal__content {
   min-height: 0;
   overflow-y: auto;
