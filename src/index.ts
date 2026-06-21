@@ -17,6 +17,21 @@ export {
   type ChatMessageKind,
 } from './repositories/chatRepository'
 export { useSessionStore } from './stores/sessionStore'
+export { EngineChatForm } from './components/EngineChatForm'
+export { EngineChatMessages } from './components/EngineChatMessages'
+export { EngineFloatingChat, type EngineChatTab } from './components/EngineFloatingChat'
+export { EngineHelpButton } from './components/EngineHelpButton'
+export { EngineHelpModal } from './components/EngineHelpModal'
+export { EngineLobbyChat } from './components/EngineLobbyChat'
+export { EngineLobbyPlayerList } from './components/EngineLobbyPlayerList'
+export { EngineRoomSummary } from './components/EngineRoomSummary'
+export { EngineTurnOrder, type EngineTurnPlayer } from './components/EngineTurnOrder'
+export {
+  installTurnEngineComponentStyles,
+  turnEngineComponentStyles,
+} from './components/styles'
+export { chatMessageFullTimestamp, chatMessageTime } from './utils/chatTime'
+export { privateReconnectUrl, publicInviteUrl } from './utils/roomLinks'
 export type { ChatMessageView } from './types/chat'
 export type {
   LobbyPlayer,
