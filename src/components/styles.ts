@@ -351,6 +351,37 @@ export const turnEngineComponentStyles = `
   flex-direction: column;
   min-width: 0;
 }
+
+.te-tabs {
+  display: flex;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.te-tabs__button {
+  flex: 1 1 0;
+}
+
+.te-player-status-panel {
+  display: grid;
+  min-width: 0;
+}
+
+.te-player-status-panel__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.te-player-status-panel__heading div {
+  min-width: 0;
+}
+
+.te-player-status-panel__stats {
+  display: flex;
+  flex-wrap: wrap;
+}
 `
 
 export function installTurnEngineComponentStyles(documentRef: Document = document): void {

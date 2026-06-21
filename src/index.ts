@@ -28,8 +28,10 @@ export { default as EngineHelpButton } from './components/EngineHelpButton.vue'
 export { default as EngineHelpModal } from './components/EngineHelpModal.vue'
 export { default as EngineLobbyChat } from './components/EngineLobbyChat.vue'
 export { default as EngineLobbyPlayerList } from './components/EngineLobbyPlayerList.vue'
+export { default as EnginePlayerStatusPanel, type EnginePlayerStat } from './components/EnginePlayerStatusPanel.vue'
 export { default as EngineDeckCard } from './components/EngineDeckCard.vue'
 export { default as EngineRoomSummary } from './components/EngineRoomSummary.vue'
+export { default as EngineTabs, type EngineTabOption } from './components/EngineTabs.vue'
 export { default as EngineTurnOrder } from './components/EngineTurnOrder.vue'
 export {
   installTurnEngineComponentStyles,
