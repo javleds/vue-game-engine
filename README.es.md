@@ -61,6 +61,7 @@ El paquete frontend resuelve:
 - Store Pinia para datos de reconexion.
 - Suscripciones realtime por sala para cambios de estado y chat.
 - Composable de ciclo de conexion/desconexion.
+- Componentes Vue reutilizables para resumen de sala, jugadores del lobby, chat, orden de turnos, contenedores de cartas, galerias y modales.
 - Tipos TypeScript compartidos para sala y chat.
 
 La aplicacion host sigue siendo responsable de:
@@ -70,6 +71,38 @@ La aplicacion host sigue siendo responsable de:
 - Tipos TypeScript del estado y comandos del juego.
 - Configurar Laravel Echo u otro cliente realtime compatible.
 - Estilos, rutas y comportamiento de UI.
+
+## Componentes Reutilizables
+
+El paquete exporta componentes Vue reutilizables agregados despues de `07a3a37` / tag `0.1.4`. Proveen UI estructural para pantallas comunes de juegos por turnos sin contener reglas ni estado especifico del juego.
+
+Instala los estilos estructurales del paquete una vez durante el arranque de la app:
+
+```ts
+import { installTurnEngineComponentStyles } from '@javleds/vue-game-engine'
+
+installTurnEngineComponentStyles()
+```
+
+Referencia de componentes:
+
+- [Indice de componentes](docs/components/README.md)
+- [EngineActionDialog](docs/components/EngineActionDialog.md)
+- [EngineCardShell](docs/components/EngineCardShell.md)
+- [EngineCardStack](docs/components/EngineCardStack.md)
+- [EngineChatForm](docs/components/EngineChatForm.md)
+- [EngineChatMessages](docs/components/EngineChatMessages.md)
+- [EngineDeckCard](docs/components/EngineDeckCard.md)
+- [EngineFloatingChat](docs/components/EngineFloatingChat.md)
+- [EngineGalleryOverlay](docs/components/EngineGalleryOverlay.md)
+- [EngineHelpButton](docs/components/EngineHelpButton.md)
+- [EngineHelpModal](docs/components/EngineHelpModal.md)
+- [EngineLobbyChat](docs/components/EngineLobbyChat.md)
+- [EngineLobbyPlayerList](docs/components/EngineLobbyPlayerList.md)
+- [EnginePlayerStatusPanel](docs/components/EnginePlayerStatusPanel.md)
+- [EngineRoomSummary](docs/components/EngineRoomSummary.md)
+- [EngineTabs](docs/components/EngineTabs.md)
+- [EngineTurnOrder](docs/components/EngineTurnOrder.md)
 
 ## Instalacion Local
 

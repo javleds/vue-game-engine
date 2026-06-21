@@ -63,6 +63,7 @@ The package provides:
 - Pinia session store for player reconnect data.
 - Realtime room subscriptions for state and chat events.
 - Connection lifecycle composable for disconnect keepalive behavior.
+- Reusable Vue UI components for room summaries, lobby players, chat, turn order, card shells, galleries, and modal flows.
 - Shared TypeScript types for room and chat API responses.
 
 The host game provides:
@@ -72,6 +73,38 @@ The host game provides:
 - Game-specific TypeScript state and command payload types.
 - Laravel Echo or another compatible realtime client.
 - Styling, routing, and UI behavior.
+
+## Reusable Components
+
+The package exports reusable Vue components added after `07a3a37` / tag `0.1.4`. They provide structural UI for common turn-based game screens without owning game-specific rules or state.
+
+Install the package component styles once during app boot:
+
+```ts
+import { installTurnEngineComponentStyles } from '@javleds/vue-game-engine'
+
+installTurnEngineComponentStyles()
+```
+
+Component reference:
+
+- [Component index](docs/components/README.md)
+- [EngineActionDialog](docs/components/EngineActionDialog.md)
+- [EngineCardShell](docs/components/EngineCardShell.md)
+- [EngineCardStack](docs/components/EngineCardStack.md)
+- [EngineChatForm](docs/components/EngineChatForm.md)
+- [EngineChatMessages](docs/components/EngineChatMessages.md)
+- [EngineDeckCard](docs/components/EngineDeckCard.md)
+- [EngineFloatingChat](docs/components/EngineFloatingChat.md)
+- [EngineGalleryOverlay](docs/components/EngineGalleryOverlay.md)
+- [EngineHelpButton](docs/components/EngineHelpButton.md)
+- [EngineHelpModal](docs/components/EngineHelpModal.md)
+- [EngineLobbyChat](docs/components/EngineLobbyChat.md)
+- [EngineLobbyPlayerList](docs/components/EngineLobbyPlayerList.md)
+- [EnginePlayerStatusPanel](docs/components/EnginePlayerStatusPanel.md)
+- [EngineRoomSummary](docs/components/EngineRoomSummary.md)
+- [EngineTabs](docs/components/EngineTabs.md)
+- [EngineTurnOrder](docs/components/EngineTurnOrder.md)
 
 ## Installation
 
